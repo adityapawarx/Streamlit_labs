@@ -1,13 +1,13 @@
 import streamlit as st
 
-page = st.sidebar.selectbox("Choose a lab", ["Enter the Key", "Ask Doc Questions", "Lab 3B","Lab 3C", "Lab 4"])
+page = st.sidebar.selectbox("Choose a lab", ["Enter the Key", "Ask Doc Questions", "lab3","lab4", "lab5"])
 
-if page == "Enter the Key":
-    st.write("Enter the Key")
+if page == "L1 Enter the Key":
+    st.write("L1 Enter the Key")
     exec(open("lab1.py").read())
 
-elif page == "Ask Doc Questions":
-    st.write("Ask Doc Questions")
+elif page == "L2 Ask Doc Questions":
+    st.write("L2 Ask Doc Questions")
     exec(open("lab2.py").read())
 
 elif page == "Lab 3B":
