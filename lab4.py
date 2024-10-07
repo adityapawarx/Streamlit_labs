@@ -4,6 +4,8 @@ import chromadb
 from PyPDF2 import PdfReader
 import os
 
+import sqlite3
+print(sqlite3.sqlite_version)
 
 def run():
     openai.api_key = st.secrets["OPEN_API_KEY"]
