@@ -1,23 +1,31 @@
 import streamlit as st
 
-page = st.sidebar.selectbox("Choose a lab", ["L1 Enter the Key", "L2 Ask Doc Questions", "lab3", "lab4", "lab5"])
+import lab1 as lab1
+import lab2 as lab2
+import lab3 as lab3
+import lab4 as lab4
+import lab5 as lab5
 
-if page == "L1 Enter the Key":
-    st.write("L1 Enter the Key")
-    exec(open("lab1.py").read())
+def main():
+    st.sidebar.title("Labs")
+    page = st.sidebar.selectbox("Choose a lab", ["lab1", "lab2", "lab3", "lab4", "lab5"])
 
-elif page == "L2 Ask Doc Questions":
-    st.write("L2 Ask Doc Questions")
-    exec(open("lab2.py").read())
+    if page == "lab1":
+        lab1.run()  
 
-elif page == "lab3":
-    st.write("This is lab3")
-    exec(open("lab3.py").read())
+    elif page == "lab2":
+        lab2.run()  
 
-elif page == "lab4":
-    st.write("This is lab4")
-    exec(open("lab4.py").read())
+    elif page == "lab3":
+        lab3.run()  
 
-elif page == "lab5":
-    st.write("This is lab5")
-    exec(open("lab5.py").read())
+    elif page == "lab4":
+        lab4.run()  
+
+    elif page == "lab5":
+        lab5.run()  
+
+if __name__ == "__main__":
+    main()
+
+#dg
