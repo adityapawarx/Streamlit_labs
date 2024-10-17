@@ -20,8 +20,8 @@ def run():
         st.session_state.messages = []
 
     #The initial message our AI wwill be displaying
-    if not st.session_state.messages:    
-        st.session_state.messages.append({"role": "system", "content": "Hi, I am Jarvis. How can I help you today?."})
+    #if not st.session_state.messages:    
+     #   st.session_state.messages.append({"role": "system", "content": "Hi, I am Jarvis. How can I help you today?."})
 
     #Dis play all messages using "for m in ms" kinda code
     for message in st.session_state.messages:
